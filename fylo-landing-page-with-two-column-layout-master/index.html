@@ -27,6 +27,93 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav {
+        width: 90%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 50px;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .bgd-color {
+        background-color: hsl(240, 75%, 98%);
+      }
+
+      .first_header,
+      .second-header,
+      .third-div {
+        width: 50%;
+      }
+
+      .second_image,
+      .illustration-2,
+      .email {
+        width: 50%;
+      }
+
+      .third-section,
+      .second-section,
+      .first-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 90%;
+        margin: auto;
+      }
+      .bg-curve1 {
+        background-image: url(./images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 150px;
+      }
+
+      .third-bgd {
+        background-color: hsl(238, 22%, 44%);
+        height: 250px;
+      }
+      .last-section1 {
+        background-color: hsl(243, 87%, 12%);
+        height: 300px;
+      }
+      p {
+        font-size: 16px;
+      }
+
+      .quote {
+        width: 300px;
+        height: 150px;
+        padding: 30px;
+        border: 1px solid white;
+        margin: 0;
+        background-color: white;
+        margin-bottom: 100px;
+      }
+      div > a:hover {
+        color: hsl(238, 22%, 44%);
+      }
+
+      i:hover {
+        color: hsl(238, 22%, 44%);
+      }
+      div > a {
+        color: lightgrey;
+        text-decoration: none;
+        padding: 5px;
+      }
+      nav > a {
+        color: black;
+        text-decoration: none;
+      }
+
       .avatar {
         display: flex;
         justify-content: flex-start;
@@ -65,6 +152,50 @@
         justify-content: space-between;
 
         margin: auto;
+      }
+      @media screen and (max-width: 1000px) {
+        .header {
+          align-items: center;
+          width: 50%;
+        }
+        .first-section,
+        .second-section {
+          flex-direction: column-reverse;
+          align-items: flex-start;
+          width: 50%;
+        }
+        .third-section {
+          flex-direction: column;
+          justify-content: space-around;
+          margin: auto;
+          align-items: center;
+          width: 50%;
+          text-wrap: 0;
+        }
+        .last-section {
+          flex-direction: column;
+        }
+        .quote {
+          width: 150px;
+          height: 150px;
+          padding: 20px;
+          border: 1px solid white;
+          margin: 0;
+          background-color: white;
+          margin-bottom: 100px;
+          font-size: xx-small;
+        }
+        .third-bgd {
+          background-color: hsl(238, 22%, 44%);
+          height: 1000px;
+        }
+        .last-section1 {
+          background-color: hsl(243, 87%, 12%);
+          height: 800px;
+        }
+        p {
+          font-size: 10px;
+        }
       }
     </style>
   </head>
@@ -130,6 +261,7 @@
           style="width: 100%; border: none; margin: auto"
         />
       </div>
+
       <section class="bgd-color">
         <section class="second-section">
           <div class="second-header">
@@ -263,8 +395,8 @@
               alt="logo-bottom"
               style="mask-image: url(./images/logo.svg)"
             />
-            <p>Phone: +1-543-123-4567</p>
-            <p>example@fylo.com</p>
+            <span><p>Phone: +1-543-123-4567</p></span>
+            <span><p>example@fylo.com</p></span>
           </div>
           <div class="nav1-bottom" style="display: grid">
             <a href="#">About Us </a><a href="#"> Jobs</a><a href="#"> Press</a

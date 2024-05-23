@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     width: 90%;
     margin: auto;
 }
@@ -65,7 +66,13 @@ p{
     margin-bottom: 100px;
     
 }
-div > a:hover {
+div > a:hover{
+    
+    color: hsl(238, 22%, 44%);
+    
+}
+
+i:hover {
     
     color: hsl(238, 22%, 44%);
     
@@ -80,12 +87,12 @@ nav >a {
     text-decoration: none;
 }
 
-
+/* 
 @media screen and (max-width:1440px) {
     .third-section, .second-section , .first-section, .last-section1 {
         flex-direction: column;
     }
-} 
+}  */
 
 @media screen and (max-width:375pxx) {
     .third-section, .second-section , .first-section, .last-section1 {
